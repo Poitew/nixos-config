@@ -28,6 +28,6 @@ My personal NixOS configuration for my system
 | `users.nix`                    | Users definition and user-specific configurations.                           |
 
 
-## To-DO
+## To-Do
 - Use flakes
 - Better modularization/organization
