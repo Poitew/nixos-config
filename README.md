@@ -16,7 +16,7 @@ My personal NixOS configuration for my system
     ├── system.nix
     └── users.nix
 ```
-| File                           | Descrizione                                                                  |
+| File                           | Description                                                                  |
 |--------------------------------|------------------------------------------------------------------------------|
 | `configuration.nix`            | Main file to import all the modules + system-wide config such as bootloader. |
 | `hardware-configuration.nix`   | Auto generated hardware config.                                              |

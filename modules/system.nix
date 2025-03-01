@@ -1,12 +1,23 @@
 { config, pkgs, ... }:
 
 {
+    boot = {
+        loader = {
+            systemd-boot.enable = true;
+            efi.canTouchEfiVariables = true;
+        };
+	
+        kernelParams = [    
+            "nvidia-drm.fbdev=1"
+        ];
+    };
+
+
     networking = {
         hostName = "nixos";
         networkmanager.enable = true;
     };
 
-    security.rtkit.enable = true;
 
     nix = {
         gc = {
@@ -20,7 +31,6 @@
 	    };
     };
 
-    time.timeZone = "Europe/Rome";
 
     i18n = {
         defaultLocale = "en_US.UTF-8";
@@ -38,5 +48,17 @@
         };
     };
 
+    time.timeZone = "Europe/Rome";
+
     console.keyMap = "it2";
+
+    system.stateVersion = "24.05";
+
+    security.rtkit.enable = true;
+
+    nixpkgs.config.allowUnfree = true;
+    
+    environment.variables = {
+        GDK_SCALE = "0.5";
+    };
 }

@@ -7,7 +7,6 @@
         vscode
         kitty
         discord
-        spotify
         prismlauncher
         gnumake
         superTuxKart
