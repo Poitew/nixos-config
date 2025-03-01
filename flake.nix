@@ -11,8 +11,8 @@
     outputs = { self, nixpkgs, spicetify-nix, ... }@inputs: {
         nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
+            
             modules = [
-                ({ config, pkgs, ... }: { inputs = inputs; })
                 ./hardware-configuration.nix
                 ./modules/system.nix
                 ./modules/packages.nix
@@ -22,6 +22,8 @@
                 ./modules/hardware.nix
                 ./modules/users.nix
             ];
+
+            specialArgs = { inherit inputs; };
         };
     };
 }
