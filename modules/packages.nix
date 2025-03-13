@@ -19,6 +19,6 @@
 	    killall
 	    emacs
 	    obsidian
-	    krita    
+	    krita
     ];
 }
