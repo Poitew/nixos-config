@@ -38,6 +38,15 @@
         # todo: move to a separate file once the config starts to get messy
         nginx = {
             enable = true;
+
+            virtualHosts.localhost = {
+                locations."/" = {
+                    return = "200 '<html><body>It works</body></html>'";
+                    extraConfig = ''
+                        default_type text/html;
+                    '';
+                };
+            };
         };
     };
 
