@@ -20,5 +20,6 @@
 	    emacs
 	    obsidian
 	    krita
+        blender
     ];
 }
