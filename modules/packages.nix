@@ -12,6 +12,7 @@
         superTuxKart
         ranger
         unzip
+        unrar
         git
         gcc
 	    btop

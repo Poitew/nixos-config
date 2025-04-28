@@ -5,14 +5,14 @@ My personal NixOS configuration for my system
 ## Structure
 ```
 .
-.
-├── configuration.nix
+├── flake.nix
 ├── hardware-configuration.nix
 └── modules/
     ├── hardware.nix
     ├── packages.nix
     ├── programs.nix
     ├── services.nix
+    ├── spicetify.nix
     ├── system.nix
     └── users.nix
 ```
@@ -29,5 +29,4 @@ My personal NixOS configuration for my system
 
 
 ## To-Do
-- Use flakes
-- Better modularization/organization
+- Update table
