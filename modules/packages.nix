@@ -15,12 +15,13 @@
         unrar
         git
         gcc
-	    btop
+	btop
         nodejs
-	    killall
-	    emacs
-	    obsidian
-	    krita
+	killall
+	emacs
+	obsidian
+	krita
         blender
+	jdk
     ];
 }
