@@ -5,7 +5,7 @@
         xserver = {
             enable = true;
 	    displayManager.gdm.enable = true;
-	    displayManager.gnome.enable = true;
+	    desktopManager.gnome.enable = true;
 		
             xkb = {
                 layout = "it";
