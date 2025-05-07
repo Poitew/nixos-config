@@ -12,7 +12,5 @@
             dedicatedServer.openFirewall = true;
             localNetworkGameTransfers.openFirewall = true;
         };
-
-        hyprland.enable = true;
     };
 }
