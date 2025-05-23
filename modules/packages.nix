@@ -23,5 +23,6 @@
 	krita
         blender
 	jdk
+	cudaPackages.cudatoolkit
     ];
 }
