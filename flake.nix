@@ -2,7 +2,7 @@
     description = "Poitew flake configuration";
 
     inputs = {
-        nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+        nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
 
         spicetify-nix.url = "github:Gerg-L/spicetify-nix";
         spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";

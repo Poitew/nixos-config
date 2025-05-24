@@ -24,5 +24,6 @@
         blender
 	jdk
 	cudaPackages.cudatoolkit
+	mpv
     ];
 }
