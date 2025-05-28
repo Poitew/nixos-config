@@ -25,5 +25,6 @@
 	jdk
 	cudaPackages.cudatoolkit
 	mpv
+	inkscape
     ];
 }
