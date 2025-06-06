@@ -26,5 +26,7 @@
 	cudaPackages.cudatoolkit
 	mpv
 	inkscape
+	cargo
+	rustc
     ];
 }
