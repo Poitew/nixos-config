@@ -4,7 +4,7 @@
     services = {
         xserver = {
             enable = true;
-	    displayManager.gdm.enable = true;
+	    displayManager.lightdm.enable = true;
 	    desktopManager.gnome.enable = true;
 		
             xkb = {
@@ -27,13 +27,13 @@
             enable = true;
         };
 
-	    openssh = {
-	        enable = true;
+	openssh = {
+	    enable = true;
 
             settings = {
                 PermitRootLogin = "no";
             };
-	    };    
+	};    
 
         # todo: move to a separate file once the config starts to get messy
         nginx = {
