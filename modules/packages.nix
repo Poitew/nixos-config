@@ -28,5 +28,6 @@
 	inkscape
 	cargo
 	rustc
+	libreoffice
     ];
 }
