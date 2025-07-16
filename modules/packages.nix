@@ -29,5 +29,7 @@
 	cargo
 	rustc
 	libreoffice
+	android-tools
+	scrcpy
     ];
 }
