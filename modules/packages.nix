@@ -8,28 +8,26 @@
         kitty
         discord
         prismlauncher
-        gnumake
         superTuxKart
         ranger
         unzip
         unrar
         git
-        gcc
-	btop
-        nodejs
-	killall
-	emacs
-	obsidian
-	krita
+		btop
+		killall
+		emacs
+		obsidian
+		krita
         blender
-	jdk
-	cudaPackages.cudatoolkit
-	mpv
-	inkscape
-	cargo
-	rustc
-	libreoffice
-	android-tools
-	scrcpy
+		cudaPackages.cudatoolkit
+		mpv
+		inkscape
+		cargo
+		rustc
+		libreoffice
+		android-tools
+		scrcpy
+		starship
+		nerd-fonts.fira-code
     ];
 }

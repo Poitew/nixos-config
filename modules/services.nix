@@ -2,11 +2,16 @@
 
 {
     services = {
+        displayManager.sddm = {
+            enable = true;
+            wayland.enable = true;
+        };
+            
+        desktopManager.plasma6.enable = true;
+
         xserver = {
             enable = true;
-	    displayManager.lightdm.enable = true;
-	    desktopManager.gnome.enable = true;
-		
+
             xkb = {
                 layout = "it";
                 variant = "";
@@ -23,17 +28,21 @@
             pulse.enable = true;
         };
 
+	    pulseaudio = {
+            enable = false;
+        };
+
         printing = {
             enable = true;
         };
 
-	openssh = {
-	    enable = true;
+	    openssh = {
+	        enable = true;
 
             settings = {
                 PermitRootLogin = "no";
             };
-	};    
+	    };    
 
         # todo: move to a separate file once the config starts to get messy
         nginx = {

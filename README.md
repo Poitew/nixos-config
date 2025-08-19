@@ -8,6 +8,7 @@ My personal NixOS configuration for my system
 ├── flake.nix
 ├── hardware-configuration.nix
 └── modules/
+    ├── fonts.nix
     ├── hardware.nix
     ├── packages.nix
     ├── programs.nix
@@ -16,17 +17,16 @@ My personal NixOS configuration for my system
     ├── system.nix
     └── users.nix
 ```
+
 | File                           | Description                                                                  |
 |--------------------------------|------------------------------------------------------------------------------|
-| `configuration.nix`            | Main file to import all the modules + system-wide config such as bootloader. |
-| `hardware-configuration.nix`   | Auto generated hardware config.                                              |
+| `flake.nix        `            | Flake where all modules are imported and the nixos version is stated         |
+| `hardware-configuration.nix`   | Auto-Generated hardware config.                                              |
+| `fonts.nix`                    | Fonts setup                                                                  |
 | `hardware.nix`                 | More hardware config.                                                        |
-| `packages.nix`                 | System-wide packages (nixpkgs).                                              |
+| `packages.nix`                 | System-wide packages.                                                        |
 | `programs.nix`                 | Packages installed and configured via the programs option.                   |
 | `services.nix`                 | General services like openSSH, Docker, etc.                                  |
+| `spicetify.nix`                | Spicetify configuration and setup                                            |
 | `system.nix`                   | Config such as keyboard, time-zone, nix gc, etc.                             |
-| `users.nix`                    | Users definition and user-specific configurations.                           |
-
-
-## To-Do
-- Update table
+| `users.nix`                    | Users declaratiob and user-specific configurations.                          |
